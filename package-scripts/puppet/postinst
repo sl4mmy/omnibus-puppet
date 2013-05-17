@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Perform necessary puppet setup steps
+# after package is installed.
+#
+
+PROGNAME=$(basename $0)
+DEST_DIR=/opt/puppet
+PREFIX=/usr/local
+
+function error_exit
+{
+  echo "${PROGNAME}: ${1:-"Unknown Error"}" 1>&2
+  exit 1
+}
+
+ln -fns $DEST_DIR/bin/puppet $PREFIX/bin || error_exit "Cannot link puppet to $PREFIX/bin"
+ln -fns $DEST_DIR/bin/facter $PREFIX/bin || error_exit "Cannot link facter to $PREFIX/bin"
+ln -fns $DEST_DIR/bin/hiera $PREFIX/bin || error_exit "Cannot link hiera to $PREFIX/bin"
+
+echo "Thank you for installing puppet!"
+
+exit 0

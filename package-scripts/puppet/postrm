@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Perform necessary puppet removal steps
+# after package is uninstalled.
+#
+
+PREFIX=/usr/local
+
+# Clean up binary symlinks if they exist
+rm -f $PREFIX/bin/puppet
+rm -f $PREFIX/bin/facter
+rm -f $PREFIX/bin/hiera
+
+echo "puppet has been uninstalled!"
+
+exit 0
