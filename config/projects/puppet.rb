@@ -4,8 +4,7 @@ homepage "puppetlabs.com"
 
 replaces        "puppet"
 install_path    "/opt/puppet"
-build_version   "3.2.3"
-build_iteration 1
+build_version   "3.4.3"
 
 # creates required build directories
 dependency "preparation"
