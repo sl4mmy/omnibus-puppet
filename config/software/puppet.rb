@@ -1,5 +1,5 @@
 name "puppet"
-version "3.4.3"
+default_version "3.4.3"
 
 dependency "ruby"
 dependency "rubygems"

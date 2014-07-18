@@ -2,7 +2,6 @@ name "puppet"
 maintainer "Kent R. Spillner"
 homepage "puppetlabs.com"
 
-replaces        "puppet"
 install_path    "/opt/puppet"
 build_version   "3.4.3"
 
