@@ -1,5 +1,5 @@
 name "hiera"
-default_version "1.3.2"
+default_version "1.3.4"
 
 dependency "ruby"
 dependency "rubygems"

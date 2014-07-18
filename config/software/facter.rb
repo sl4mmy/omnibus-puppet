@@ -1,5 +1,5 @@
 name "facter"
-default_version "1.7.5"
+default_version "1.7.6"
 
 dependency "ruby"
 dependency "rubygems"

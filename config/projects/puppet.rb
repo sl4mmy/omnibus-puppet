@@ -3,7 +3,7 @@ maintainer "Kent R. Spillner"
 homepage "puppetlabs.com"
 
 install_path    "/opt/puppet"
-build_version   "3.4.3"
+build_version   "3.6.2"
 
 # creates required build directories
 dependency "preparation"
